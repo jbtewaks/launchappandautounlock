@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "" > ~/.ssh/known_hosts
+cd `dirname $0` 
+make clean
+rm -rf ./packages
+make package install
+
+
+exit 0
